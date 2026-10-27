@@ -1,0 +1,2 @@
+10.20.26 CODE LOG: 
+creating spell casting system. Turns out, the spellsDatabase needs to be complete otherwise the spellsDatabaseReader won't read it without bugging. Next thing to work on. COMPLETE SPELLS DATABASE

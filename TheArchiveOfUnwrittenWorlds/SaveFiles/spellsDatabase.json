@@ -1,0 +1,131 @@
+{
+    "spells": {
+        "fire": {
+            "description": "Conjures fire or manipulates fire",
+            "traits": {
+                "spellSequence": "fire",
+                "category": "elemental-fire",
+                "hostility": "neutral",
+                "numTargets": 1
+            },
+            "flags": {
+                "usable": true,
+                "learned": true,
+                "temp_forgotten": false
+            },
+            "targets": {
+                "nothing": "fire_orb",
+                "person": "falling_fireball",
+                "GamePiece": {
+                    "friendly": "matchStick",
+                    "hostile": "falling_fireball",
+                    "neutral": "nothing"
+                },
+                "self": "falling_fireball"
+            }
+        },
+        "water": {
+            "description": "conjures or manipulates water.",
+            "traits": {
+                "hostility": "friendly",
+                "category": "elemental-water",
+                "numtargets": 1,
+                "spellSequence": "water"
+            },
+            "flags": {
+                "learned": true,
+                "usable": true,
+                "temp_forgotten": false
+            },
+            "targets": {
+                "nothing": "water_orb",
+                "person": "splash",
+                "GamePiece": {
+                    "friendly": "plop",
+                    "hostile": "splash",
+                    "neutral": "plop"
+                },
+                "self": "heal"
+            }
+        },
+        "ice": {
+            "desciption": "Conjures or manipulates ice.",
+            "traits": {
+                "hostility": "neutral",
+                "category": "elemental-ice",
+                "numtargets": 1,
+                "spellSequence": "ice"
+            },
+            "flags": {
+                "learned": true,
+                "usable": true,
+                "temp_forgotten": false
+            },
+            "targets": {
+                "nothing": "ice_floor",
+                "person": "icicle",
+                "GamePiece": {
+                    "friendly": "snowflake",
+                    "hostile": "icicle",
+                    "neutral": "snowflake"
+                },
+                "self": "snowflake"
+            }
+        },
+    
+    "grass": {
+        "description": "Conjures grasslands or manipulates the stability of grassyland",
+        "traits": {
+            "hostility": "friendly",
+            "category": "elemental-land",
+            "numtargets": 1,
+            "spellSequence": "grassy"
+
+        },
+
+        "flags":{
+            "learned": true,
+            "usable": true,
+            "temp_forgotten": false
+        },
+            "targets": {
+                "nothing": "grassy_floor",
+                "person": "grassy_floor",
+                "GamePiece": {
+                    "friendly": "grassy_floor",
+                    "hostile": "grassy_floor",
+                    "neutral": "grassy_floor"
+                },
+                "self": "grassy_floor"
+            }
+        },
+
+    "flower": {
+        "description": "Creates flowers to bloom or controlls some plants",
+        "traits": {
+            "hostility": "friendly",
+            "category": "elemental-land",
+            "numtargets": 1,
+            "spellSequence": "flower"
+        },
+        "flags":{
+            "learned": true,
+            "usable": true,
+            "temp_forgotten": false
+        },
+        
+        "targets": {
+                "nothing": "flower_pot",
+                "person": "venus_flytrap",
+                "GamePiece": {
+                    "friendly": "flower",
+                    "hostile": "venus_flytrap",
+                    "neutral": "flower"
+                },
+                "self": "heal"
+            }
+        }
+    }
+}
+    
+   
